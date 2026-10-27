@@ -71,7 +71,7 @@ def metrics(pred, y):
             "F1": 2 * tp / (2 * tp + fp + fn + eps),
             "Precision": tp / (tp + fp + eps),
             "Recall": tp / (tp + fn + eps)}
-
+    
 
 def average(rows):
     return {k: float(np.mean([r[k] for r in rows])) for k in rows[0]}
